@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player Demo</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .player-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .album-art {
+      width: 300px;
+      height: 300px;
+      background-color: #333;
+      border-radius: 16px;
+      margin: 0 auto 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .song-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .song-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .artist {
+      color: #aaa;
+      font-size: 18px;
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px 0;
+    }
+    .main-controls {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .play-btn {
+      background: #6a1b9a;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="player-container">
+    <div class="album-art">
+      <span style="font-size: 50px;">🎵</span>
+    </div>
+    
+    <div class="song-info">
+      <div class="song-title">Blinding Lights</div>
+      <div class="artist">The Weeknd</div>
+    </div>
+    
+    <div class="progress-bar">
+      <input type="range" style="width: 100%">
+      <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+        <span>1:23</span>
+        <span>3:20</span>
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button>🔀</button>
+      <div class="main-controls">
+        <button>⏮</button>
+        <button class="play-btn">▶</button>
+        <button>⏭</button>
+      </div>
+      <button>🔁</button>
+    </div>
+    
+    <div class="actions" style="display: flex; justify-content: space-around;">
+      <button>❤️</button>
+      <button>⬇️</button>
+      <button>↗️</button>
+    </div>
+  </div>
+</body>
+</html>
